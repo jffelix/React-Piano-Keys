@@ -1,0 +1,19 @@
+{
+  "name": "react-piano-keys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jffelix/React-Piano-Keys.git"
+  },
+  "author": "Jean-Luc Felix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jffelix/React-Piano-Keys/issues"
+  },
+  "homepage": "https://github.com/jffelix/React-Piano-Keys#readme"
+}
