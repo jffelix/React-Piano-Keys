@@ -20,7 +20,25 @@ const App = () => {
 
     return (
         <div>
-            <h1>{mainTitle}</h1>
+            <div className="mainTitle">
+                <h1>{mainTitle}</h1>
+            </div>
+            <div className="naturalNotes">
+                <button>F</button>
+                <button>G</button>
+                <button>A</button>
+                <button>B</button>
+                <button>C</button>
+                <button>D</button>
+                <button>E</button>
+            </div>
+            <div className="sharpsAndFlats">
+                <button>F#/Gb</button>
+                <button>G#/Ab</button>
+                <button>A#/Bb</button>
+                <button>C#/Db</button>
+                <button>D#/Eb</button>
+            </div>
         </div>
     )
 
