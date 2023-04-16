@@ -4,6 +4,7 @@ import DbNote from "../assets/notes_Db.mp3";
 import DNote from "../assets/notes_D.mp3";
 import EbNote from "../assets/notes_Eb.mp3";
 import ENote from "../assets/notes_E.mp3";
+import FNote from "../assets/notes_F.mp3";
 
 import ANote from "../assets/notes_A.mp3";
 import AbNote from "../assets/notes_Ab.mp3";
@@ -57,6 +58,11 @@ function Keyboard() {
         console.log("You clicked E Note!");
     }
 
+    function playFNote() {
+        new Audio(FNote).play();
+        console.log("You clicked F Note!");
+    }
+
 
     return (
         <div className ="keyboard">
@@ -74,6 +80,9 @@ function Keyboard() {
             </div>
             <div className="naturalNotes">
                 <button onClick={playENote}>E</button>
+            </div>
+            <div className="naturalNotes">
+                <button onClick={playFNote}>F</button>
             </div>
 
             <div className="sharpFlatNotes">
