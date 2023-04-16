@@ -1,3 +1,5 @@
+// add media queries for keys
+
 import './Keyboard.css';
 import CNote from "../assets/notes_C.mp3";
 import DbNote from "../assets/notes_Db.mp3";
