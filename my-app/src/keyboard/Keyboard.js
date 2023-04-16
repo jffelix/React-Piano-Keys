@@ -3,6 +3,7 @@ import ANote from "../assets/notes_A.mp3";
 import AbNote from "../assets/notes_Ab.mp3";
 import BNote from "../assets/notes_B.mp3";
 import BbNote from "../assets/notes_Bb.mp3";
+import CNote from "../assets/notes_C.mp3";
 
 function Keyboard() {
 
@@ -26,6 +27,11 @@ function Keyboard() {
         console.log("You clicked B Note!");
     }
 
+    function playCNote() {
+        new Audio(CNote).play();
+        console.log("You clicked C Note!");
+    }
+
 
     return (
         <div>
@@ -41,6 +47,9 @@ function Keyboard() {
             </div>
             <div className="naturalNotes">
                 <button onClick={playBNote}>B</button>
+            </div>
+            <div className="naturalNotes">
+                <button onClick={playCNote}>C</button>
             </div>
         </div>
     )
