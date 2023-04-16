@@ -84,7 +84,7 @@ function Keyboard() {
             </div>
             <div className="sharpFlatNotes">
                 <div className="DFlat">
-                    <button onClick={playDbNote}>Db</button>
+                    <button onClick={playDbNote}>Db / C#</button>
                 </div>
             </div>
             <div className="naturalNotes">
@@ -94,7 +94,7 @@ function Keyboard() {
             </div>
             <div className="sharpFlatNotes">
                 <div className="EFlat">
-                    <button onClick={playEbNote}>Eb</button>
+                    <button onClick={playEbNote}>Eb / D#</button>
                 </div>
             </div>
             <div className="naturalNotes">
@@ -109,7 +109,7 @@ function Keyboard() {
             </div>
             <div className="sharpFlatNotes">
                 <div className="GFlat">
-                    <button onClick={playGbNote}>Gb</button>
+                    <button onClick={playGbNote}>Gb / F#</button>
                 </div>
             </div>
             <div className="naturalNotes">
@@ -119,7 +119,7 @@ function Keyboard() {
             </div>
             <div className="sharpFlatNotes">
                 <div className="AFlat">
-                    <button onClick={playAbNote}>Ab</button>
+                    <button onClick={playAbNote}>Ab / G#</button>
                 </div>
             </div>
             <div className="naturalNotes">
@@ -129,7 +129,7 @@ function Keyboard() {
             </div>
             <div className="sharpFlatNotes">
                 <div className="BFlat">
-                    <button onClick={playBbNote}>Bb</button>
+                    <button onClick={playBbNote}>Bb / A#</button>
                 </div>
             </div>
             <div className="naturalNotes">
