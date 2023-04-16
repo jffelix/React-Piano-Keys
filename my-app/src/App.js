@@ -2,20 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import howler from "howler";
 import Keyboard from "./keyboard/Keyboard.js";
-import soundTest from "./assets/notes_A.mp3";
 
 function App() {
-
-  function playNoteTest() {
-    new Audio(soundTest).play();
-    console.log("You clicked playNoteTest!");
-  }
 
   return (
     <div className="App">
       <h1>Welcome to React Piano Keys!</h1>
       <Keyboard />
-      <button onClick={playNoteTest}>A Note</button>
     </div>
   );
 }
