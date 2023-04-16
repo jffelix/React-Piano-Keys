@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jffelix/React-Piano-Keys/issues"
   },
-  "homepage": "https://github.com/jffelix/React-Piano-Keys#readme"
+  "homepage": "https://github.com/jffelix/React-Piano-Keys#readme",
+  "dependencies": {
+    "howler": "^2.2.3"
+  }
 }
