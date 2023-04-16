@@ -5,30 +5,77 @@
 }
 
 .naturalNotes button {
-    padding: 70px 20px;
+    padding: 200px 50px;
     color: black;
     background-color: white;
+    z-index: 1;
 }
 
 
 .sharpFlatNotes button {
-    padding: 40px 10px;
+    padding: 120px 30px;
     color: white;
     position: relative;
     background-color: black;
+    z-index: 2;
 }
 
 .naturalC button {
     position: relative;
-    left: 42px;
+    left: 182px;
 }
 
 .DFlat {
     position: relative;
-    left: 20px;
+    left: 140px;
 }
 
 .naturalD {
     position: relative;
+    left: 101px;
+}
+
+.EFlat {
+    position: relative;
+    left: 60px;
+}
+
+.naturalE {
+    position: relative;
     left: 20px;
+}
+
+.naturalF {
+    position: relative;
+    left: 20px;
+}
+
+.GFlat {
+    position: relative;
+    right: 25px;
+}
+
+.naturalG {
+    position: relative;
+    right: 62px;
+}
+
+.AFlat {
+    position: relative;
+    right: 105px;
+}
+
+.naturalA {
+    position: relative;
+    right: 143px;
+}
+
+.BFlat {
+    position: relative;
+    right: 185px;
+}
+
+.naturalB {
+    position: relative;
+    right: 223px;
 }
