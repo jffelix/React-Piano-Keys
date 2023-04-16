@@ -3,3 +3,16 @@
     justify-content: center;
     /* text-align: center; */
 }
+
+.naturalNotes button {
+    padding: 70px 20px;
+    color: black;
+    background-color: white;
+}
+
+.sharpFlatNotes button {
+    padding: 40px 10px;
+    color: white;
+    background-color: black;
+}
+
