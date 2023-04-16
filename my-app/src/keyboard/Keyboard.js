@@ -2,6 +2,8 @@ import './Keyboard.css';
 import CNote from "../assets/notes_C.mp3";
 import DbNote from "../assets/notes_Db.mp3";
 import DNote from "../assets/notes_D.mp3";
+import EbNote from "../assets/notes_Eb.mp3";
+import ENote from "../assets/notes_E.mp3";
 
 import ANote from "../assets/notes_A.mp3";
 import AbNote from "../assets/notes_Ab.mp3";
@@ -45,6 +47,16 @@ function Keyboard() {
         console.log("You clicked D Note!");
     }
 
+    function playEbNote() {
+        new Audio(EbNote).play();
+        console.log("You clicked Eb Note!");
+    }
+
+    function playENote() {
+        new Audio(ENote).play();
+        console.log("You clicked E Note!");
+    }
+
 
     return (
         <div className ="keyboard">
@@ -57,7 +69,12 @@ function Keyboard() {
             <div className="naturalNotes">
                 <button onClick={playDNote}>D</button>
             </div>
-
+            <div className="sharpFlatNotes">
+                <button onClick={playEbNote}>Eb</button>
+            </div>
+            <div className="naturalNotes">
+                <button onClick={playENote}>E</button>
+            </div>
 
             <div className="sharpFlatNotes">
                 <button onClick={playAbNote}>Ab</button>
