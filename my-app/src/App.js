@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import howler from "howler";
+import soundTest from "./assets/notes_A.mp3";
 
 function App() {
 
   function playNoteTest() {
+    new Audio(soundTest).play();
     console.log("You clicked playNoteTest!");
   }
 
