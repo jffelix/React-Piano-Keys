@@ -78,40 +78,64 @@ function Keyboard() {
     return (
         <div className ="keyboard">
             <div className="naturalNotes">
-                <button onClick={playCNote}>C</button>
+                <div className="naturalC">
+                    <button onClick={playCNote}>C</button>
+                </div>
             </div>
             <div className="sharpFlatNotes">
-                <button onClick={playDbNote}>Db</button>
+                <div className="DFlat">
+                    <button onClick={playDbNote}>Db</button>
+                </div>
             </div>
             <div className="naturalNotes">
-                <button onClick={playDNote}>D</button>
+                <div className="naturalD">
+                    <button onClick={playDNote}>D</button>
+                </div>
             </div>
             <div className="sharpFlatNotes">
-                <button onClick={playEbNote}>Eb</button>
+                <div className="EFlat">
+                    <button onClick={playEbNote}>Eb</button>
+                </div>
             </div>
             <div className="naturalNotes">
-                <button onClick={playENote}>E</button>
+                <div className="naturalE">
+                    <button onClick={playENote}>E</button>
+                </div>
             </div>
             <div className="naturalNotes">
-                <button onClick={playFNote}>F</button>
+                <div className="naturalF">
+                    <button onClick={playFNote}>F</button>
+                </div>
             </div>
             <div className="sharpFlatNotes">
-                <button onClick={playGbNote}>Gb</button>
+                <div className="GFlat">
+                    <button onClick={playGbNote}>Gb</button>
+                </div>
             </div>
             <div className="naturalNotes">
-                <button onClick={playGNote}>G</button>
+                <div className="naturalG">
+                    <button onClick={playGNote}>G</button>
+                </div>
             </div>
             <div className="sharpFlatNotes">
-                <button onClick={playAbNote}>Ab</button>
+                <div className="AFlat">
+                    <button onClick={playAbNote}>Ab</button>
+                </div>
             </div>
             <div className="naturalNotes">
-                <button onClick={playANote}>A</button>
+                <div className="naturalA">
+                    <button onClick={playANote}>A</button>
+                </div>
             </div>
             <div className="sharpFlatNotes">
-                <button onClick={playBbNote}>Bb</button>
+                <div className="BFlat">
+                    <button onClick={playBbNote}>Bb</button>
+                </div>
             </div>
             <div className="naturalNotes">
-                <button onClick={playBNote}>B</button>
+                <div className="naturalB">
+                    <button onClick={playBNote}>B</button>
+                </div>
             </div>
         </div>
     )
