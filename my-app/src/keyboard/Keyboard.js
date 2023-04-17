@@ -1,3 +1,4 @@
+import { useState } from "react";
 import './Keyboard.css';
 import FeaturedSongs from './featuredSongs.js';
 
@@ -15,6 +16,9 @@ import BNote from "../assets/notes_B.mp3";
 import BbNote from "../assets/notes_Bb.mp3";
 
 function Keyboard() {
+
+    // Will be using this to change key color during onClick
+    const [ color,setColor ] = useState('white');
 
     function playCNote() {
         new Audio(CNote).play();

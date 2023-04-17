@@ -1,6 +1,5 @@
 import "./featuredSongs.css";
 
-
 function featuredSongs(props)  {
 
     function sleep(ms) {
@@ -44,7 +43,7 @@ function featuredSongs(props)  {
     }
 
     return (
-        <div>
+        <div className="iAintWorried">
             <button onClick={iAintWorried}>I Ain't Worried</button>
         </div>
     )
