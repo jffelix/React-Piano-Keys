@@ -79,3 +79,14 @@
     position: relative;
     right: 200px;
 }
+
+@media (max-width: 1260px) {
+
+    .naturalNotes button {
+        padding: 240px 56px;
+    }
+
+    .sharpFlatNotes button {
+        padding: 140px 20px;
+    }
+}
