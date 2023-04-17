@@ -76,9 +76,44 @@ function Keyboard() {
         // console.log("You clicked B Note!");
     }
 
-    function iAintWorried() {
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+
+    async function iAintWorried() {
         new Audio(FNote).play();
+        await sleep(500);
         new Audio(FNote).play();
+        await sleep(250);
+        new Audio(DNote).play();
+        await sleep(250);
+        new Audio(FNote).play();
+        await sleep(500);
+        new Audio(GNote).play();
+        await sleep(250);
+        new Audio(ANote).play();
+        await sleep(1500);
+        new Audio(ANote).play();
+        await sleep(250);
+        new Audio(ANote).play();
+        await sleep(250);
+        new Audio(GNote).play();
+        await sleep(250);
+        new Audio(GNote).play();
+        await sleep(250);
+        new Audio(FNote).play();
+        await sleep(500);
+        new Audio(ENote).play();
+        await sleep(250);
+        new Audio(GNote).play();
+        await sleep(500);
+        new Audio(GNote).play();
+        await sleep(250);
+        new Audio(FNote).play();
+        await sleep(250);
+        new Audio(FNote).play();
+        await sleep(250);
+        new Audio(ENote).play();
     }
 
 
