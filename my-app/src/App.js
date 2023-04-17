@@ -7,8 +7,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Welcome to React Piano Keys!</h1>
-      <Keyboard />
+        <div className="mainTitle">
+            <h1>React Piano Keys</h1>
+        </div>
+        <Keyboard />
     </div>
   );
 }
