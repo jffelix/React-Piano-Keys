@@ -76,47 +76,6 @@ function Keyboard() {
         // console.log("You clicked B Note!");
     }
 
-    function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-      }
-
-    async function iAintWorried() {
-        new Audio(FNote).play();
-        await sleep(500);
-        new Audio(FNote).play();
-        await sleep(250);
-        new Audio(DNote).play();
-        await sleep(250);
-        new Audio(FNote).play();
-        await sleep(500);
-        new Audio(GNote).play();
-        await sleep(250);
-        new Audio(ANote).play();
-        await sleep(1500);
-        new Audio(ANote).play();
-        await sleep(250);
-        new Audio(ANote).play();
-        await sleep(250);
-        new Audio(GNote).play();
-        await sleep(250);
-        new Audio(GNote).play();
-        await sleep(250);
-        new Audio(FNote).play();
-        await sleep(500);
-        new Audio(ENote).play();
-        await sleep(250);
-        new Audio(GNote).play();
-        await sleep(500);
-        new Audio(GNote).play();
-        await sleep(250);
-        new Audio(FNote).play();
-        await sleep(250);
-        new Audio(FNote).play();
-        await sleep(250);
-        new Audio(ENote).play();
-    }
-
-
     return (
         <div>
             <div className ="keyboard">
@@ -182,7 +141,20 @@ function Keyboard() {
                 </div>
             </div>
             <div>
-                <FeaturedSongs iAintWorried={iAintWorried}/>
+                <FeaturedSongs
+                CNote={CNote}
+                DbNote={DbNote}
+                DNote={DNote}
+                EbNote={EbNote}
+                ENote={ENote}
+                FNote={FNote}
+                GbNote={GbNote}
+                GNote={GNote}
+                AbNote={AbNote}
+                ANote={ANote}
+                BbNote={BbNote}
+                BNote={BNote} 
+                />
             </div>
         </div>
     )
