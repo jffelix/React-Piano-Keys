@@ -1,6 +1,6 @@
-1// add media queries for keys
-
 import './Keyboard.css';
+import FeaturedSongs from './featuredSongs.js';
+
 import CNote from "../assets/notes_C.mp3";
 import DbNote from "../assets/notes_Db.mp3";
 import DNote from "../assets/notes_D.mp3";
@@ -76,68 +76,78 @@ function Keyboard() {
         // console.log("You clicked B Note!");
     }
 
+    function iAintWorried() {
+        new Audio(FNote).play();
+        new Audio(FNote).play();
+    }
+
 
     return (
-        <div className ="keyboard">
-            <div className="naturalNotes">
-                <div className="naturalC">
-                    <button onClick={playCNote}>C</button>
+        <div>
+            <div className ="keyboard">
+                <div className="naturalNotes">
+                    <div className="naturalC">
+                        <button onClick={playCNote}>C</button>
+                    </div>
+                </div>
+                <div className="sharpFlatNotes">
+                    <div className="DFlat">
+                        <button onClick={playDbNote}>Db / C#</button>
+                    </div>
+                </div>
+                <div className="naturalNotes">
+                    <div className="naturalD">
+                        <button onClick={playDNote}>D</button>
+                    </div>
+                </div>
+                <div className="sharpFlatNotes">
+                    <div className="EFlat">
+                        <button onClick={playEbNote}>Eb / D#</button>
+                    </div>
+                </div>
+                <div className="naturalNotes">
+                    <div className="naturalE">
+                        <button onClick={playENote}>E</button>
+                    </div>
+                </div>
+                <div className="naturalNotes">
+                    <div className="naturalF">
+                        <button onClick={playFNote}>F</button>
+                    </div>
+                </div>
+                <div className="sharpFlatNotes">
+                    <div className="GFlat">
+                        <button onClick={playGbNote}>Gb / F#</button>
+                    </div>
+                </div>
+                <div className="naturalNotes">
+                    <div className="naturalG">
+                        <button onClick={playGNote}>G</button>
+                    </div>
+                </div>
+                <div className="sharpFlatNotes">
+                    <div className="AFlat">
+                        <button onClick={playAbNote}>Ab / G#</button>
+                    </div>
+                </div>
+                <div className="naturalNotes">
+                    <div className="naturalA">
+                        <button onClick={playANote}>A</button>
+                    </div>
+                </div>
+                <div className="sharpFlatNotes">
+                    <div className="BFlat">
+                        <button onClick={playBbNote}>Bb / A#</button>
+                    </div>
+                </div>
+                <div className="naturalNotes">
+                    <div className="naturalB">
+                        <button onClick={playBNote}>B</button>
+                    </div>
                 </div>
             </div>
-            <div className="sharpFlatNotes">
-                <div className="DFlat">
-                    <button onClick={playDbNote}>Db / C#</button>
-                </div>
-            </div>
-            <div className="naturalNotes">
-                <div className="naturalD">
-                    <button onClick={playDNote}>D</button>
-                </div>
-            </div>
-            <div className="sharpFlatNotes">
-                <div className="EFlat">
-                    <button onClick={playEbNote}>Eb / D#</button>
-                </div>
-            </div>
-            <div className="naturalNotes">
-                <div className="naturalE">
-                    <button onClick={playENote}>E</button>
-                </div>
-            </div>
-            <div className="naturalNotes">
-                <div className="naturalF">
-                    <button onClick={playFNote}>F</button>
-                </div>
-            </div>
-            <div className="sharpFlatNotes">
-                <div className="GFlat">
-                    <button onClick={playGbNote}>Gb / F#</button>
-                </div>
-            </div>
-            <div className="naturalNotes">
-                <div className="naturalG">
-                    <button onClick={playGNote}>G</button>
-                </div>
-            </div>
-            <div className="sharpFlatNotes">
-                <div className="AFlat">
-                    <button onClick={playAbNote}>Ab / G#</button>
-                </div>
-            </div>
-            <div className="naturalNotes">
-                <div className="naturalA">
-                    <button onClick={playANote}>A</button>
-                </div>
-            </div>
-            <div className="sharpFlatNotes">
-                <div className="BFlat">
-                    <button onClick={playBbNote}>Bb / A#</button>
-                </div>
-            </div>
-            <div className="naturalNotes">
-                <div className="naturalB">
-                    <button onClick={playBNote}>B</button>
-                </div>
+            <div>
+                <FeaturedSongs iAintWorried={iAintWorried}/>
             </div>
         </div>
     )
