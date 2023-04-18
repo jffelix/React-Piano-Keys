@@ -21,6 +21,15 @@ function Keyboard() {
     const [ backgroundColorC, setBackgroundColorC ] = useState('white');
     const [ backgroundColorDb, setBackgroundColorDb ] = useState('black');
     const [backgroundColorD, setBackgroundColorD ]  = useState('white');
+    const [ backgroundColorEb, setBackgroundColorEb ] = useState('black');
+    const [backgroundColorE, setBackgroundColorE ]  = useState('white');
+    const [backgroundColorF, setBackgroundColorF ]  = useState('white');
+    const [ backgroundColorGb, setBackgroundColorGb ] = useState('black');
+    const [backgroundColorG, setBackgroundColorG ]  = useState('white');
+    const [ backgroundColorAb, setBackgroundColorAb ] = useState('black');
+    const [backgroundColorA, setBackgroundColorA ]  = useState('white');
+    const [ backgroundColorBb, setBackgroundColorBb ] = useState('black');
+    const [backgroundColorB, setBackgroundColorB ]  = useState('white');
 
     function playCNote() {
         new Audio(CNote).play();
@@ -104,6 +113,12 @@ function Keyboard() {
         setBackgroundColorD('white');
     }
 
+    async function toggleKeyColorEb() {
+        setBackgroundColorEb('yellow');
+        await sleep(500);
+        setBackgroundColorEb('black');
+    }
+
     return (
         <div>
             <div className ="keyboard">
@@ -140,7 +155,12 @@ function Keyboard() {
                 </div>
                 <div className="sharpFlatNotes">
                     <div className="EFlat">
-                        <button onClick={playEbNote}>Eb / D#</button>
+                        <button 
+                        style={{background: backgroundColorEb}}
+                        onClick={() => {
+                            playEbNote();
+                            toggleKeyColorEb();
+                        }}>Eb / D#</button>
                     </div>
                 </div>
                 <div className="naturalNotes">
