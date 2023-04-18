@@ -18,17 +18,18 @@ import BbNote from "../assets/notes_Bb.mp3";
 function Keyboard() {
 
     // Will be using this to change key color during onClick
-    const [ backgroundColor, setBackgroundColor ] = useState('white');
-    const [ backgroundColor2, setBackgroundColor2 ] = useState('black');
+    const [ backgroundColorC, setBackgroundColorC ] = useState('white');
+    const [ backgroundColorDb, setBackgroundColorDb ] = useState('black');
+    const [backgroundColorD, setBackgroundColorD ]  = useState('white');
 
     function playCNote() {
         new Audio(CNote).play();
-        console.log("You clicked C Note!");
+        // console.log("You clicked C Note!");
     }
 
     function playDbNote() {
         new Audio(DbNote).play();
-        console.log("You clicked Db Note!");
+        // console.log("You clicked Db Note!");
     }
 
     function playDNote() {
@@ -85,16 +86,22 @@ function Keyboard() {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    async function toggleKeyColor() {
-        setBackgroundColor('yellow');
+    async function toggleKeyColorC() {
+        setBackgroundColorC('yellow');
         await sleep(500);
-        setBackgroundColor('white');
+        setBackgroundColorC('white');
     }
 
-    async function toggleKeyColor2() {
-        setBackgroundColor2('yellow');
+    async function toggleKeyColorDb() {
+        setBackgroundColorDb('yellow');
         await sleep(500);
-        setBackgroundColor2('black');
+        setBackgroundColorDb('black');
+    }
+
+    async function toggleKeyColorD() {
+        setBackgroundColorD('yellow');
+        await sleep(500);
+        setBackgroundColorD('white');
     }
 
     return (
@@ -103,26 +110,32 @@ function Keyboard() {
                 <div className="naturalNotes">
                     <div className="naturalC">
                         <button 
-                        style={{background: backgroundColor}}
+                        style={{background: backgroundColorC}}
                         onClick={() => {
                             playCNote();
-                            toggleKeyColor();
+                            toggleKeyColorC();
                             }}>C</button>
                     </div>
                 </div>
                 <div className="sharpFlatNotes">
                     <div className="DFlat">
                         <button 
-                        style={{background: backgroundColor2}}                   
+                        style={{background: backgroundColorDb}}                   
                         onClick={() => {
                             playDbNote();
-                            toggleKeyColor2();
+                            toggleKeyColorDb();
                         }}>Db / C#</button>
                     </div>
                 </div>
                 <div className="naturalNotes">
-                    <div className="naturalD">
-                        <button onClick={playDNote}>D</button>
+                    <div 
+                    className="naturalD">
+                        <button 
+                        style={{background: backgroundColorD}}
+                        onClick={() => {
+                            playDNote();
+                            toggleKeyColorD();
+                        }}>D</button>
                     </div>
                 </div>
                 <div className="sharpFlatNotes">
