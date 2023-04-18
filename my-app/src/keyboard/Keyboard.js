@@ -304,7 +304,19 @@ function Keyboard() {
                 AbNote={AbNote}
                 ANote={ANote}
                 BbNote={BbNote}
-                BNote={BNote} 
+                BNote={BNote}
+                toggleKeyColorC={toggleKeyColorC} 
+                toggleKeyColorDb={toggleKeyColorDb} 
+                toggleKeyColorD={toggleKeyColorD}
+                toggleKeyColorEb={toggleKeyColorEb}  
+                toggleKeyColorE={toggleKeyColorE} 
+                toggleKeyColorF={toggleKeyColorF}
+                toggleKeyColorGb={toggleKeyColorGb}  
+                toggleKeyColorG={toggleKeyColorG}
+                toggleKeyColorAb={toggleKeyColorAb} 
+                toggleKeyColorA={toggleKeyColorA}
+                toggleKeyColorBb={toggleKeyColorBb}
+                toggleKeyColorB={toggleKeyColorB}  
                 />
             </div>
         </div>
