@@ -18,16 +18,17 @@ import BbNote from "../assets/notes_Bb.mp3";
 function Keyboard() {
 
     // Will be using this to change key color during onClick
-    const [ color,setColor ] = useState('white');
+    const [ backgroundColor, setBackgroundColor ] = useState('white');
+    const [ backgroundColor2, setBackgroundColor2 ] = useState('black');
 
     function playCNote() {
         new Audio(CNote).play();
-        // console.log("You clicked C Note!");
+        console.log("You clicked C Note!");
     }
 
     function playDbNote() {
         new Audio(DbNote).play();
-        // console.log("You clicked Db Note!");
+        console.log("You clicked Db Note!");
     }
 
     function playDNote() {
@@ -80,17 +81,43 @@ function Keyboard() {
         // console.log("You clicked B Note!");
     }
 
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function toggleKeyColor() {
+        setBackgroundColor('yellow');
+        await sleep(500);
+        setBackgroundColor('white');
+    }
+
+    async function toggleKeyColor2() {
+        setBackgroundColor2('yellow');
+        await sleep(500);
+        setBackgroundColor2('black');
+    }
+
     return (
         <div>
             <div className ="keyboard">
                 <div className="naturalNotes">
                     <div className="naturalC">
-                        <button onClick={playCNote}>C</button>
+                        <button 
+                        style={{background: backgroundColor}}
+                        onClick={() => {
+                            playCNote();
+                            toggleKeyColor();
+                            }}>C</button>
                     </div>
                 </div>
                 <div className="sharpFlatNotes">
                     <div className="DFlat">
-                        <button onClick={playDbNote}>Db / C#</button>
+                        <button 
+                        style={{background: backgroundColor2}}                   
+                        onClick={() => {
+                            playDbNote();
+                            toggleKeyColor2();
+                        }}>Db / C#</button>
                     </div>
                 </div>
                 <div className="naturalNotes">
