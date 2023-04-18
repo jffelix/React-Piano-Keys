@@ -119,6 +119,18 @@ function Keyboard() {
         setBackgroundColorEb('black');
     }
 
+    async function toggleKeyColorE() {
+        setBackgroundColorE('yellow');
+        await sleep(500);
+        setBackgroundColorE('white');
+    }
+
+    async function toggleKeyColorF() {
+        setBackgroundColorF('yellow');
+        await sleep(500);
+        setBackgroundColorF('white');
+    }
+
     return (
         <div>
             <div className ="keyboard">
@@ -165,12 +177,22 @@ function Keyboard() {
                 </div>
                 <div className="naturalNotes">
                     <div className="naturalE">
-                        <button onClick={playENote}>E</button>
+                        <button 
+                        style={{background: backgroundColorE}}
+                        onClick={() => {
+                            playENote();
+                            toggleKeyColorE();
+                        }}>E</button>
                     </div>
                 </div>
                 <div className="naturalNotes">
                     <div className="naturalF">
-                        <button onClick={playFNote}>F</button>
+                        <button 
+                        style={{background: backgroundColorF}}
+                        onClick={() => {
+                            playFNote();
+                            toggleKeyColorF();
+                        }}>F</button>
                     </div>
                 </div>
                 <div className="sharpFlatNotes">
