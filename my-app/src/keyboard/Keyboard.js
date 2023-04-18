@@ -17,7 +17,6 @@ import BbNote from "../assets/notes_Bb.mp3";
 
 function Keyboard() {
 
-    // Will be using this to change key color during onClick
     const [ backgroundColorC, setBackgroundColorC ] = useState('white');
     const [ backgroundColorDb, setBackgroundColorDb ] = useState('black');
     const [backgroundColorD, setBackgroundColorD ]  = useState('white');
