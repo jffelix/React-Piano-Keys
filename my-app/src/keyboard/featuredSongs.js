@@ -4,7 +4,7 @@ function FeaturedSongs(props)  {
 
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
-      }
+    }
 
     async function iAintWorried() {
         new Audio(props.FNote).play();
