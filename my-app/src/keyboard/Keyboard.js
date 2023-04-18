@@ -96,73 +96,73 @@ function Keyboard() {
 
     async function toggleKeyColorC() {
         setBackgroundColorC('yellow');
-        await sleep(500);
+        await sleep(250);
         setBackgroundColorC('white');
     }
 
     async function toggleKeyColorDb() {
         setBackgroundColorDb('yellow');
-        await sleep(500);
+        await sleep(250);
         setBackgroundColorDb('black');
     }
 
     async function toggleKeyColorD() {
         setBackgroundColorD('yellow');
-        await sleep(500);
+        await sleep(250);
         setBackgroundColorD('white');
     }
 
     async function toggleKeyColorEb() {
         setBackgroundColorEb('yellow');
-        await sleep(500);
+        await sleep(250);
         setBackgroundColorEb('black');
     }
 
     async function toggleKeyColorE() {
         setBackgroundColorE('yellow');
-        await sleep(500);
+        await sleep(250);
         setBackgroundColorE('white');
     }
 
     async function toggleKeyColorF() {
         setBackgroundColorF('yellow');
-        await sleep(500);
+        await sleep(250);
         setBackgroundColorF('white');
     }
 
     async function toggleKeyColorGb() {
         setBackgroundColorGb('yellow');
-        await sleep(500);
+        await sleep(250);
         setBackgroundColorGb('black');
     }
 
     async function toggleKeyColorG() {
         setBackgroundColorG('yellow');
-        await sleep(500);
+        await sleep(250);
         setBackgroundColorG('white');
     }
 
     async function toggleKeyColorAb() {
         setBackgroundColorAb('yellow');
-        await sleep(500);
+        await sleep(250);
         setBackgroundColorAb('black');
     }
 
     async function toggleKeyColorA() {
         setBackgroundColorA('yellow');
-        await sleep(500);
+        await sleep(250);
         setBackgroundColorA('white');
     }
 
     async function toggleKeyColorBb() {
         setBackgroundColorBb('yellow');
-        await sleep(500);
+        await sleep(250);
         setBackgroundColorBb('black');
     }
 
     async function toggleKeyColorB() {
         setBackgroundColorB('yellow');
-        await sleep(500);
+        await sleep(250);
         setBackgroundColorB('white');
     }
 
