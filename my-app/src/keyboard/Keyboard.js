@@ -131,6 +131,24 @@ function Keyboard() {
         setBackgroundColorF('white');
     }
 
+    async function toggleKeyColorGb() {
+        setBackgroundColorGb('yellow');
+        await sleep(500);
+        setBackgroundColorGb('black');
+    }
+
+    async function toggleKeyColorG() {
+        setBackgroundColorG('yellow');
+        await sleep(500);
+        setBackgroundColorG('white');
+    }
+
+    async function toggleKeyColorAb() {
+        setBackgroundColorAb('yellow');
+        await sleep(500);
+        setBackgroundColorAb('black');
+    }
+
     return (
         <div>
             <div className ="keyboard">
@@ -155,8 +173,7 @@ function Keyboard() {
                     </div>
                 </div>
                 <div className="naturalNotes">
-                    <div 
-                    className="naturalD">
+                    <div className="naturalD">
                         <button 
                         style={{background: backgroundColorD}}
                         onClick={() => {
@@ -197,17 +214,32 @@ function Keyboard() {
                 </div>
                 <div className="sharpFlatNotes">
                     <div className="GFlat">
-                        <button onClick={playGbNote}>Gb / F#</button>
+                        <button 
+                        style={{background: backgroundColorGb}}
+                        onClick={() => {
+                            playGbNote();
+                            toggleKeyColorGb();
+                        }}>Gb / F#</button>
                     </div>
                 </div>
                 <div className="naturalNotes">
                     <div className="naturalG">
-                        <button onClick={playGNote}>G</button>
+                        <button 
+                        style={{background: backgroundColorG}}
+                        onClick={() => {
+                            playGNote();
+                            toggleKeyColorG();
+                        }}>G</button>
                     </div>
                 </div>
                 <div className="sharpFlatNotes">
                     <div className="AFlat">
-                        <button onClick={playAbNote}>Ab / G#</button>
+                        <button 
+                        style={{background: backgroundColorAb}}
+                        onClick={() => {
+                            playAbNote();
+                            toggleKeyColorAb();
+                        }}>Ab / G#</button>
                     </div>
                 </div>
                 <div className="naturalNotes">
