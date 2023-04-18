@@ -149,6 +149,24 @@ function Keyboard() {
         setBackgroundColorAb('black');
     }
 
+    async function toggleKeyColorA() {
+        setBackgroundColorA('yellow');
+        await sleep(500);
+        setBackgroundColorA('white');
+    }
+
+    async function toggleKeyColorBb() {
+        setBackgroundColorBb('yellow');
+        await sleep(500);
+        setBackgroundColorBb('black');
+    }
+
+    async function toggleKeyColorB() {
+        setBackgroundColorB('yellow');
+        await sleep(500);
+        setBackgroundColorB('white');
+    }
+
     return (
         <div>
             <div className ="keyboard">
@@ -244,17 +262,32 @@ function Keyboard() {
                 </div>
                 <div className="naturalNotes">
                     <div className="naturalA">
-                        <button onClick={playANote}>A</button>
+                        <button 
+                        style={{background: backgroundColorA}}
+                        onClick={() => {
+                            playANote();
+                            toggleKeyColorA();
+                        }}>A</button>
                     </div>
                 </div>
                 <div className="sharpFlatNotes">
                     <div className="BFlat">
-                        <button onClick={playBbNote}>Bb / A#</button>
+                        <button 
+                        style={{background: backgroundColorBb}}
+                        onClick={() => {
+                            playBbNote();
+                            toggleKeyColorBb();
+                        }}>Bb / A#</button>
                     </div>
                 </div>
                 <div className="naturalNotes">
                     <div className="naturalB">
-                        <button onClick={playBNote}>B</button>
+                        <button 
+                        style={{background: backgroundColorB}}
+                        onClick={() => {
+                            playBNote();
+                            toggleKeyColorB();
+                        }}>B</button>
                     </div>
                 </div>
             </div>
