@@ -90,3 +90,14 @@
         padding: 140px 30px;
     }
 }
+
+@media (min-width: 1300px) {
+
+    .naturalNotes button {
+        padding: 240px 60px;
+    }
+
+    .sharpFlatNotes button {
+        padding: 140px 30px;
+    }
+}
