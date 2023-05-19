@@ -83,10 +83,10 @@
 @media (max-width: 1260px) {
 
     .naturalNotes button {
-        padding: 240px 56px;
+        padding: 240px 60px;
     }
 
     .sharpFlatNotes button {
-        padding: 140px 20px;
+        padding: 140px 30px;
     }
 }
