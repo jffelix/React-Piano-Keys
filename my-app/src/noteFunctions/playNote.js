@@ -1,6 +1,15 @@
 import CNote from "../assets/notes_C.mp3";
 import DbNote from "../assets/notes_Db.mp3";
 import DNote from "../assets/notes_D.mp3";
+import EbNote from "../assets/notes_Eb.mp3";
+import ENote from "../assets/notes_E.mp3";
+import FNote from "../assets/notes_F.mp3";
+import GbNote from "../assets/notes_Gb.mp3";
+import GNote from "../assets/notes_G.mp3";
+import ANote from "../assets/notes_A.mp3";
+import AbNote from "../assets/notes_Ab.mp3";
+import BNote from "../assets/notes_B.mp3";
+import BbNote from "../assets/notes_Bb.mp3";
 
 function playCNote() {
     new Audio(CNote).play();
@@ -18,17 +27,17 @@ function playDNote() {
 
 function playEbNote() {
     new Audio(EbNote).play();
-    // console.log("You clicked Eb Note!");
+    console.log("You clicked Eb Note!");
 }
 
 function playENote() {
     new Audio(ENote).play();
-    // console.log("You clicked E Note!");
+    console.log("You clicked E Note!");
 }
 
 function playFNote() {
     new Audio(FNote).play();
-    // console.log("You clicked F Note!");
+    console.log("You clicked F Note!");
 }
 
 function playGbNote() {
@@ -64,5 +73,8 @@ function playBNote() {
 export default {
     playCNote,
     playDbNote,
-    playDNote
+    playDNote,
+    playEbNote,
+    playENote,
+    playFNote
 };

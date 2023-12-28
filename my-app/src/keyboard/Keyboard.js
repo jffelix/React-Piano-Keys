@@ -42,25 +42,25 @@ function Keyboard() {
     //     // console.log("You clicked Db Note!");
     // }
 
-    function playDNote() {
-        new Audio(DNote).play();
-        // console.log("You clicked D Note!");
-    }
+    // function playDNote() {
+    //     new Audio(DNote).play();
+    //     // console.log("You clicked D Note!");
+    // }
 
-    function playEbNote() {
-        new Audio(EbNote).play();
-        // console.log("You clicked Eb Note!");
-    }
+    // function playEbNote() {
+    //     new Audio(EbNote).play();
+    //     // console.log("You clicked Eb Note!");
+    // }
 
-    function playENote() {
-        new Audio(ENote).play();
-        // console.log("You clicked E Note!");
-    }
+    // function playENote() {
+    //     new Audio(ENote).play();
+    //     // console.log("You clicked E Note!");
+    // }
 
-    function playFNote() {
-        new Audio(FNote).play();
-        // console.log("You clicked F Note!");
-    }
+    // function playFNote() {
+    //     new Audio(FNote).play();
+    //     // console.log("You clicked F Note!");
+    // }
 
     function playGbNote() {
         new Audio(GbNote).play();
@@ -216,7 +216,7 @@ function Keyboard() {
                         <button 
                         style={{background: backgroundColorEb}}
                         onClick={() => {
-                            playEbNote();
+                            playNote.playEbNote();
                             toggleKeyColorEb();
                         }}>Eb / D#</button>
                     </div>
@@ -226,7 +226,7 @@ function Keyboard() {
                         <button 
                         style={{background: backgroundColorE}}
                         onClick={() => {
-                            playENote();
+                            playNote.playENote();
                             toggleKeyColorE();
                         }}>E</button>
                     </div>
@@ -236,7 +236,7 @@ function Keyboard() {
                         <button 
                         style={{background: backgroundColorF}}
                         onClick={() => {
-                            playFNote();
+                            playNote.playFNote();
                             toggleKeyColorF();
                         }}>F</button>
                     </div>
