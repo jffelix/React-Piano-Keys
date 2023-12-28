@@ -1,4 +1,6 @@
 import CNote from "../assets/notes_C.mp3";
+import DbNote from "../assets/notes_Db.mp3";
+import DNote from "../assets/notes_D.mp3";
 
 function playCNote() {
     new Audio(CNote).play();
@@ -7,11 +9,11 @@ function playCNote() {
 
 function playDbNote() {
     new Audio(DbNote).play();
-    // console.log("You clicked Db Note!");
+    console.log("You clicked Db Note!");
 }
 function playDNote() {
     new Audio(DNote).play();
-    // console.log("You clicked D Note!");
+    console.log("You clicked D Note!");
 }
 
 function playEbNote() {
@@ -61,5 +63,6 @@ function playBNote() {
 
 export default {
     playCNote,
-    // playDbNote,
+    playDbNote,
+    playDNote
 };

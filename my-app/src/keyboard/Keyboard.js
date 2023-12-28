@@ -37,10 +37,10 @@ function Keyboard() {
     //     // console.log("You clicked C Note!");
     // }
 
-    function playDbNote() {
-        new Audio(DbNote).play();
-        // console.log("You clicked Db Note!");
-    }
+    // function playDbNote() {
+    //     new Audio(DbNote).play();
+    //     // console.log("You clicked Db Note!");
+    // }
 
     function playDNote() {
         new Audio(DNote).play();
@@ -186,7 +186,6 @@ function Keyboard() {
                         style={{background: backgroundColorC}}
                         onClick={() => {
                             playNote.playCNote();
-                            // playCNote();
                             toggleKeyColorC();
                             }}>C</button>
                     </div>
@@ -196,7 +195,8 @@ function Keyboard() {
                         <button 
                         style={{background: backgroundColorDb}}                   
                         onClick={() => {
-                            playDbNote();
+                            playNote.playDbNote();
+                            // playDbNote();
                             toggleKeyColorDb();
                         }}>Db / C#</button>
                     </div>
@@ -206,7 +206,7 @@ function Keyboard() {
                         <button 
                         style={{background: backgroundColorD}}
                         onClick={() => {
-                            playDNote();
+                            playNote.playDNote();
                             toggleKeyColorD();
                         }}>D</button>
                     </div>
