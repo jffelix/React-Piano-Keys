@@ -31,66 +31,7 @@ function Keyboard() {
     const [backgroundColorA, setBackgroundColorA ]  = useState('white');
     const [ backgroundColorBb, setBackgroundColorBb ] = useState('black');
     const [backgroundColorB, setBackgroundColorB ]  = useState('white');
-
-    // function playCNote() {
-    //     new Audio(CNote).play();
-    //     // console.log("You clicked C Note!");
-    // }
-
-    // function playDbNote() {
-    //     new Audio(DbNote).play();
-    //     // console.log("You clicked Db Note!");
-    // }
-
-    // function playDNote() {
-    //     new Audio(DNote).play();
-    //     // console.log("You clicked D Note!");
-    // }
-
-    // function playEbNote() {
-    //     new Audio(EbNote).play();
-    //     // console.log("You clicked Eb Note!");
-    // }
-
-    // function playENote() {
-    //     new Audio(ENote).play();
-    //     // console.log("You clicked E Note!");
-    // }
-
-    // function playFNote() {
-    //     new Audio(FNote).play();
-    //     // console.log("You clicked F Note!");
-    // }
-
-    function playGbNote() {
-        new Audio(GbNote).play();
-        // console.log("You clicked Gb Note!");
-    }
-
-    function playGNote() {
-        new Audio(GNote).play();
-        // console.log("You clicked G Note!");
-    }
-
-    function playAbNote() {
-        new Audio(AbNote).play();
-        // console.log("You clicked Ab Note!");
-    }
-
-    function playANote() {
-        new Audio(ANote).play();
-        // console.log("You clicked A Note!");
-    }
-
-    function playBbNote() {
-        new Audio(BbNote).play();
-        // console.log("You clicked Bb Note!");
-    }
-
-    function playBNote() {
-        new Audio(BNote).play();
-        // console.log("You clicked B Note!");
-    }
+    
 
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
@@ -246,7 +187,7 @@ function Keyboard() {
                         <button 
                         style={{background: backgroundColorGb}}
                         onClick={() => {
-                            playGbNote();
+                            playNote.playGbNote();
                             toggleKeyColorGb();
                         }}>Gb / F#</button>
                     </div>
@@ -256,7 +197,7 @@ function Keyboard() {
                         <button 
                         style={{background: backgroundColorG}}
                         onClick={() => {
-                            playGNote();
+                            playNote.playGNote();
                             toggleKeyColorG();
                         }}>G</button>
                     </div>
@@ -266,7 +207,7 @@ function Keyboard() {
                         <button 
                         style={{background: backgroundColorAb}}
                         onClick={() => {
-                            playAbNote();
+                            playNote.playAbNote();
                             toggleKeyColorAb();
                         }}>Ab / G#</button>
                     </div>
@@ -276,7 +217,7 @@ function Keyboard() {
                         <button 
                         style={{background: backgroundColorA}}
                         onClick={() => {
-                            playANote();
+                            playNote.playANote();
                             toggleKeyColorA();
                         }}>A</button>
                     </div>
@@ -286,7 +227,7 @@ function Keyboard() {
                         <button 
                         style={{background: backgroundColorBb}}
                         onClick={() => {
-                            playBbNote();
+                            playNote.playBbNote();
                             toggleKeyColorBb();
                         }}>Bb / A#</button>
                     </div>
@@ -296,7 +237,7 @@ function Keyboard() {
                         <button 
                         style={{background: backgroundColorB}}
                         onClick={() => {
-                            playBNote();
+                            playNote.playBNote();
                             toggleKeyColorB();
                         }}>B</button>
                     </div>

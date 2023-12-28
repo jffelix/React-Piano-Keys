@@ -42,32 +42,32 @@ function playFNote() {
 
 function playGbNote() {
     new Audio(GbNote).play();
-    // console.log("You clicked Gb Note!");
+    console.log("You clicked Gb Note!");
 }
 
 function playGNote() {
     new Audio(GNote).play();
-    // console.log("You clicked G Note!");
+    console.log("You clicked G Note!");
 }
 
 function playAbNote() {
     new Audio(AbNote).play();
-    // console.log("You clicked Ab Note!");
+    console.log("You clicked Ab Note!");
 }
 
 function playANote() {
     new Audio(ANote).play();
-    // console.log("You clicked A Note!");
+    console.log("You clicked A Note!");
 }
 
 function playBbNote() {
     new Audio(BbNote).play();
-    // console.log("You clicked Bb Note!");
+    console.log("You clicked Bb Note!");
 }
 
 function playBNote() {
     new Audio(BNote).play();
-    // console.log("You clicked B Note!");
+    console.log("You clicked B Note!");
 }
 
 export default {
@@ -76,5 +76,11 @@ export default {
     playDNote,
     playEbNote,
     playENote,
-    playFNote
+    playFNote,
+    playGbNote,
+    playGNote,
+    playAbNote,
+    playANote,
+    playBbNote,
+    playBNote
 };
