@@ -7,4 +7,3 @@ Welcome to my mini-piano created through React! This is a simple interactive app
 
 - Click to play piano keys
 - Sample songs that highlight keys being played in real-time
-
