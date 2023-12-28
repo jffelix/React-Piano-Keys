@@ -15,6 +15,8 @@ import AbNote from "../assets/notes_Ab.mp3";
 import BNote from "../assets/notes_B.mp3";
 import BbNote from "../assets/notes_Bb.mp3";
 
+import playNote from "../noteFunctions/playNote.js";
+
 function Keyboard() {
 
     const [ backgroundColorC, setBackgroundColorC ] = useState('white');
@@ -30,19 +32,10 @@ function Keyboard() {
     const [ backgroundColorBb, setBackgroundColorBb ] = useState('black');
     const [backgroundColorB, setBackgroundColorB ]  = useState('white');
 
-    useEffect(() => {
-        window.addEventListener('keydown', e => {
-            if(e.key === 'a'){
-                playCNote();
-                toggleKeyColorC();
-            }
-        })
-    })
-
-    function playCNote() {
-        new Audio(CNote).play();
-        // console.log("You clicked C Note!");
-    }
+    // function playCNote() {
+    //     new Audio(CNote).play();
+    //     // console.log("You clicked C Note!");
+    // }
 
     function playDbNote() {
         new Audio(DbNote).play();
@@ -175,6 +168,15 @@ function Keyboard() {
         setBackgroundColorB('white');
     }
 
+    // useEffect(() => {
+    //     window.addEventListener('keydown', e => {
+    //         if(e.key === 'a'){
+    //             playCNote();
+    //             toggleKeyColorC();
+    //         }
+    //     })
+    // })
+
     return (
         <div>
             <div className ="keyboard">
@@ -183,7 +185,8 @@ function Keyboard() {
                         <button 
                         style={{background: backgroundColorC}}
                         onClick={() => {
-                            playCNote();
+                            playNote.playCNote();
+                            // playCNote();
                             toggleKeyColorC();
                             }}>C</button>
                     </div>
