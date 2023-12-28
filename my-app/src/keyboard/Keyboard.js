@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './Keyboard.css';
 import FeaturedSongs from './featuredSongs.js';
 
@@ -29,6 +29,15 @@ function Keyboard() {
     const [backgroundColorA, setBackgroundColorA ]  = useState('white');
     const [ backgroundColorBb, setBackgroundColorBb ] = useState('black');
     const [backgroundColorB, setBackgroundColorB ]  = useState('white');
+
+    useEffect(() => {
+        window.addEventListener('keydown', e => {
+            if(e.key === 'a'){
+                playCNote();
+                toggleKeyColorC();
+            }
+        })
+    })
 
     function playCNote() {
         new Audio(CNote).play();
