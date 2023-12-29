@@ -93,6 +93,18 @@
     }
 }
 
+@media (min-width: 1261px) and (max-width: 1299px) {
+
+    .naturalNotes button {
+        padding: 240px 60px;
+    }
+
+    .sharpFlatNotes button {
+        padding: 140px 30px;
+    }
+
+}
+
 @media (min-width: 1300px) {
 
     .naturalNotes button {
@@ -112,5 +124,16 @@
 
     .sharpFlatNotes button {
         padding: 140px 30px;
+    }
+}
+
+@media (min-width: 1500px) {
+
+    .naturalNotes button {
+        padding: 275px 85px;
+    }
+
+    .sharpFlatNotes button {
+        padding: 160px 30px;
     }
 }
