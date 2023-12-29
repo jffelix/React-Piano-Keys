@@ -7,3 +7,11 @@ Welcome to my mini-piano created through React! This is a simple interactive app
 
 - Click to play piano keys
 - Sample songs that highlight keys being played in real-time
+
+
+## How to run the application
+- Fork over this repository to your GitHub account.
+- Run "git clone" command in Terminal to copy the repository to your personal computer.
+- Open VS Code with your cloned repository.
+- In the Terminal, navigate to the "my-app" folder
+- Run npm start and the application will automatically open up in Google Chrome
