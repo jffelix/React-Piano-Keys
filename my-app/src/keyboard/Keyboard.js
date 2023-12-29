@@ -109,15 +109,6 @@ function Keyboard() {
         setBackgroundColorB('white');
     }
 
-    // useEffect(() => {
-    //     window.addEventListener('keydown', e => {
-    //         if(e.key === 'a'){
-    //             playCNote();
-    //             toggleKeyColorC();
-    //         }
-    //     })
-    // })
-
     return (
         <div>
             <div className ="keyboard">
